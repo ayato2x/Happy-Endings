@@ -1,0 +1,687 @@
+{
+  "size": 116,
+  "regions": {
+    "skin": [
+      0,
+      5
+    ],
+    "hair": [
+      6,
+      8
+    ],
+    "outfit": [
+      9,
+      16
+    ],
+    "eyes": [
+      17,
+      17
+    ],
+    "male_skin": [
+      18,
+      26
+    ],
+    "male_hair": [
+      27,
+      27
+    ],
+    "neutral": [
+      28,
+      65
+    ],
+    "outfit_light": [
+      66,
+      68
+    ],
+    "hair_shadow": [
+      69,
+      69
+    ],
+    "outfit_sheer": [
+      70,
+      78
+    ],
+    "outfit_imported_nurse": [
+      79,
+      87
+    ],
+    "outfit_imported_latex": [
+      88,
+      92
+    ],
+    "outfit_imported_police": [
+      93,
+      100
+    ],
+    "outfit_imported_disco": [
+      101,
+      109
+    ],
+    "outfit_imported_pink_latex": [
+      110,
+      114
+    ],
+    "neutral_extra": [
+      115,
+      115
+    ]
+  },
+  "entries": [
+    {
+      "index": 0,
+      "hex": "FDDCC0",
+      "region": "skin"
+    },
+    {
+      "index": 1,
+      "hex": "924F4D",
+      "region": "skin"
+    },
+    {
+      "index": 2,
+      "hex": "D9A686",
+      "region": "skin"
+    },
+    {
+      "index": 3,
+      "hex": "B77C65",
+      "region": "skin"
+    },
+    {
+      "index": 4,
+      "hex": "FFF5E3",
+      "region": "skin"
+    },
+    {
+      "index": 5,
+      "hex": "EBC1A3",
+      "region": "skin"
+    },
+    {
+      "index": 6,
+      "hex": "263253",
+      "region": "hair"
+    },
+    {
+      "index": 7,
+      "hex": "000828",
+      "region": "hair"
+    },
+    {
+      "index": 8,
+      "hex": "6069A1",
+      "region": "hair"
+    },
+    {
+      "index": 9,
+      "hex": "7A1E2C",
+      "region": "outfit"
+    },
+    {
+      "index": 10,
+      "hex": "4A0F2B",
+      "region": "outfit"
+    },
+    {
+      "index": 11,
+      "hex": "A02D27",
+      "region": "outfit"
+    },
+    {
+      "index": 12,
+      "hex": "2B0F2B",
+      "region": "outfit"
+    },
+    {
+      "index": 13,
+      "hex": "5F1A32",
+      "region": "outfit"
+    },
+    {
+      "index": 14,
+      "hex": "9B3645",
+      "region": "outfit"
+    },
+    {
+      "index": 15,
+      "hex": "E86A73",
+      "region": "outfit"
+    },
+    {
+      "index": 16,
+      "hex": "F8C0B9",
+      "region": "outfit"
+    },
+    {
+      "index": 17,
+      "hex": "B4202A",
+      "region": "eyes"
+    },
+    {
+      "index": 18,
+      "hex": "FFEDE9",
+      "region": "male_skin"
+    },
+    {
+      "index": 19,
+      "hex": "FFCDCC",
+      "region": "male_skin"
+    },
+    {
+      "index": 20,
+      "hex": "FFADAE",
+      "region": "male_skin"
+    },
+    {
+      "index": 21,
+      "hex": "FCBDBE",
+      "region": "male_skin"
+    },
+    {
+      "index": 22,
+      "hex": "FFD1D1",
+      "region": "male_skin"
+    },
+    {
+      "index": 23,
+      "hex": "D45D6E",
+      "region": "male_skin"
+    },
+    {
+      "index": 24,
+      "hex": "F38F99",
+      "region": "male_skin"
+    },
+    {
+      "index": 25,
+      "hex": "DB2D60",
+      "region": "male_skin"
+    },
+    {
+      "index": 26,
+      "hex": "EE768F",
+      "region": "male_skin"
+    },
+    {
+      "index": 27,
+      "hex": "14182E",
+      "region": "male_hair"
+    },
+    {
+      "index": 28,
+      "hex": "00082A",
+      "region": "neutral"
+    },
+    {
+      "index": 29,
+      "hex": "120A29",
+      "region": "neutral"
+    },
+    {
+      "index": 30,
+      "hex": "1E0E29",
+      "region": "neutral"
+    },
+    {
+      "index": 31,
+      "hex": "2C2437",
+      "region": "neutral"
+    },
+    {
+      "index": 32,
+      "hex": "2F5753",
+      "region": "neutral"
+    },
+    {
+      "index": 33,
+      "hex": "333941",
+      "region": "neutral"
+    },
+    {
+      "index": 34,
+      "hex": "342E3F",
+      "region": "neutral"
+    },
+    {
+      "index": 35,
+      "hex": "3B1725",
+      "region": "neutral"
+    },
+    {
+      "index": 36,
+      "hex": "3D3B4D",
+      "region": "neutral"
+    },
+    {
+      "index": 37,
+      "hex": "3E4463",
+      "region": "neutral"
+    },
+    {
+      "index": 38,
+      "hex": "4A5462",
+      "region": "neutral"
+    },
+    {
+      "index": 39,
+      "hex": "5B3138",
+      "region": "neutral"
+    },
+    {
+      "index": 40,
+      "hex": "75414F",
+      "region": "neutral"
+    },
+    {
+      "index": 41,
+      "hex": "767DA9",
+      "region": "neutral"
+    },
+    {
+      "index": 42,
+      "hex": "796755",
+      "region": "neutral"
+    },
+    {
+      "index": 43,
+      "hex": "8B93AF",
+      "region": "neutral"
+    },
+    {
+      "index": 44,
+      "hex": "8E5252",
+      "region": "neutral"
+    },
+    {
+      "index": 45,
+      "hex": "A08662",
+      "region": "neutral"
+    },
+    {
+      "index": 46,
+      "hex": "A2AADF",
+      "region": "neutral"
+    },
+    {
+      "index": 47,
+      "hex": "AB453D",
+      "region": "neutral"
+    },
+    {
+      "index": 48,
+      "hex": "AE4A3E",
+      "region": "neutral"
+    },
+    {
+      "index": 49,
+      "hex": "B1B8E4",
+      "region": "neutral"
+    },
+    {
+      "index": 50,
+      "hex": "B3B9D1",
+      "region": "neutral"
+    },
+    {
+      "index": 51,
+      "hex": "B7574C",
+      "region": "neutral"
+    },
+    {
+      "index": 52,
+      "hex": "C7B08B",
+      "region": "neutral"
+    },
+    {
+      "index": 53,
+      "hex": "D96B50",
+      "region": "neutral"
+    },
+    {
+      "index": 54,
+      "hex": "DAE0EA",
+      "region": "neutral"
+    },
+    {
+      "index": 55,
+      "hex": "E1E6FF",
+      "region": "neutral"
+    },
+    {
+      "index": 56,
+      "hex": "E4D2AA",
+      "region": "neutral"
+    },
+    {
+      "index": 57,
+      "hex": "F9A31B",
+      "region": "neutral"
+    },
+    {
+      "index": 58,
+      "hex": "FA6A0A",
+      "region": "neutral"
+    },
+    {
+      "index": 59,
+      "hex": "FF9F90",
+      "region": "neutral"
+    },
+    {
+      "index": 60,
+      "hex": "FFA8AC",
+      "region": "neutral"
+    },
+    {
+      "index": 61,
+      "hex": "FFD541",
+      "region": "neutral"
+    },
+    {
+      "index": 62,
+      "hex": "FFE7DD",
+      "region": "neutral"
+    },
+    {
+      "index": 63,
+      "hex": "FFECE8",
+      "region": "neutral"
+    },
+    {
+      "index": 64,
+      "hex": "FFFC40",
+      "region": "neutral"
+    },
+    {
+      "index": 65,
+      "hex": "FFFFFF",
+      "region": "neutral"
+    },
+    {
+      "index": 66,
+      "hex": "CF8574",
+      "region": "outfit_light"
+    },
+    {
+      "index": 67,
+      "hex": "BD6A57",
+      "region": "outfit_light"
+    },
+    {
+      "index": 68,
+      "hex": "AC5546",
+      "region": "outfit_light"
+    },
+    {
+      "index": 69,
+      "hex": "010929",
+      "region": "hair_shadow"
+    },
+    {
+      "index": 70,
+      "hex": "C34648",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 71,
+      "hex": "901B29",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 72,
+      "hex": "BC3B3D",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 73,
+      "hex": "AD2A31",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 74,
+      "hex": "B4202B",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 75,
+      "hex": "B53336",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 76,
+      "hex": "C34B4F",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 77,
+      "hex": "972433",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 78,
+      "hex": "2F1426",
+      "region": "outfit_sheer"
+    },
+    {
+      "index": 79,
+      "hex": "FFFFFE",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 80,
+      "hex": "B9BFFA",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 81,
+      "hex": "000827",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 82,
+      "hex": "B42029",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 83,
+      "hex": "E3E6FE",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 84,
+      "hex": "DF3E22",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 85,
+      "hex": "010928",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 86,
+      "hex": "73172C",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 87,
+      "hex": "FA6A09",
+      "region": "outfit_imported_nurse",
+      "refLightness": 100
+    },
+    {
+      "index": 88,
+      "hex": "292951",
+      "region": "outfit_imported_latex",
+      "refLightness": 24
+    },
+    {
+      "index": 89,
+      "hex": "000826",
+      "region": "outfit_imported_latex",
+      "refLightness": 24
+    },
+    {
+      "index": 90,
+      "hex": "444480",
+      "region": "outfit_imported_latex",
+      "refLightness": 24
+    },
+    {
+      "index": 91,
+      "hex": "191731",
+      "region": "outfit_imported_latex",
+      "refLightness": 24
+    },
+    {
+      "index": 92,
+      "hex": "010927",
+      "region": "outfit_imported_latex",
+      "refLightness": 24
+    },
+    {
+      "index": 93,
+      "hex": "263250",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 94,
+      "hex": "010926",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 95,
+      "hex": "000825",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 96,
+      "hex": "B9BFF8",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 97,
+      "hex": "E3E6FC",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 98,
+      "hex": "60699E",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 99,
+      "hex": "FFFFFC",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 100,
+      "hex": "849BE1",
+      "region": "outfit_imported_police",
+      "refLightness": 24
+    },
+    {
+      "index": 101,
+      "hex": "F67090",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 102,
+      "hex": "E22F6D",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 103,
+      "hex": "000824",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 104,
+      "hex": "B21853",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 105,
+      "hex": "E3E6FB",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 106,
+      "hex": "B9BFF7",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 107,
+      "hex": "010925",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 108,
+      "hex": "849BE0",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 109,
+      "hex": "FFFFFB",
+      "region": "outfit_imported_disco",
+      "refLightness": 70
+    },
+    {
+      "index": 110,
+      "hex": "E22F6C",
+      "region": "outfit_imported_pink_latex",
+      "refLightness": 54
+    },
+    {
+      "index": 111,
+      "hex": "991F53",
+      "region": "outfit_imported_pink_latex",
+      "refLightness": 54
+    },
+    {
+      "index": 112,
+      "hex": "F6708F",
+      "region": "outfit_imported_pink_latex",
+      "refLightness": 54
+    },
+    {
+      "index": 113,
+      "hex": "000823",
+      "region": "outfit_imported_pink_latex",
+      "refLightness": 54
+    },
+    {
+      "index": 114,
+      "hex": "010924",
+      "region": "outfit_imported_pink_latex",
+      "refLightness": 54
+    },
+    {
+      "index": 115,
+      "hex": "444345",
+      "region": "neutral"
+    }
+  ]
+}

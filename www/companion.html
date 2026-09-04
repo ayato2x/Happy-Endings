@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="color-scheme" content="dark">
+  <title>Happy Endings — Desktop Receptionist</title>
+  <link rel="stylesheet" href="companion.css">
+</head>
+<body>
+  <main id="companion-shell" aria-label="Desktop receptionist">
+    <div id="companion-stage" aria-hidden="true"></div>
+    <div id="companion-drag-handle" aria-hidden="true">•••</div>
+    <div id="companion-loading">•••</div>
+    <section id="companion-tooltip" role="status" aria-live="polite">
+      <div class="companion-tooltip-head">
+        <span id="companion-name">RECEPTIONIST</span>
+        <span id="companion-status">ON SHIFT</span>
+      </div>
+      <div class="companion-metrics">
+        <div><span id="companion-cash-label">CASH</span><strong id="companion-cash">$0</strong></div>
+        <div><span id="companion-customers-label">CUSTOMERS</span><strong id="companion-customers">0</strong></div>
+      </div>
+      <div class="companion-size-control">
+        <span id="companion-size-label">SIZE</span>
+        <div class="companion-size-adjuster">
+          <button id="companion-size-down" type="button" aria-label="Make companion smaller">−</button>
+          <output id="companion-size-value" aria-live="polite">100%</output>
+          <button id="companion-size-up" type="button" aria-label="Make companion larger">+</button>
+        </div>
+      </div>
+      <div id="companion-drag-hint">DRAG HER TO MOVE</div>
+      <div class="companion-actions">
+        <button id="companion-open-game" type="button">OPEN GAME</button>
+        <button id="companion-hide" type="button">HIDE</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/__vendor/phaser.min.js"></script>
+  <script src="i18n.js"></script>
+  <script src="palette.js"></script>
+  <script src="data.js"></script>
+  <script src="companion-runtime.js"></script>
+  <script src="outfit-workshop.js"></script>
+  <script src="girl.js"></script>
+  <script src="companion.js"></script>
+</body>
+</html>

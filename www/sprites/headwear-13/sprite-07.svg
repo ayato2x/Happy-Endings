@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" width="1000" height="2000" viewBox="0 0 1000 2000" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<rect x="350" y="150" width="90" height="10" fill="#000827" />
+<rect x="330" y="160" width="20" height="10" fill="#000827" />
+<rect x="350" y="160" width="10" height="10" fill="#B9BFFA" />
+<rect x="360" y="160" width="70" height="10" fill="#FFFFFE" />
+<rect x="430" y="160" width="10" height="10" fill="#B9BFFA" />
+<rect x="440" y="160" width="40" height="10" fill="#000827" />
+<rect x="320" y="170" width="10" height="10" fill="#000827" />
+<rect x="330" y="170" width="10" height="10" fill="#B9BFFA" />
+<rect x="340" y="170" width="120" height="10" fill="#FFFFFE" />
+<rect x="460" y="170" width="20" height="10" fill="#B9BFFA" />
+<rect x="480" y="170" width="10" height="10" fill="#000827" />
+<rect x="310" y="180" width="10" height="50" fill="#000827" />
+<rect x="320" y="180" width="10" height="10" fill="#B9BFFA" />
+<rect x="330" y="180" width="140" height="10" fill="#FFFFFE" />
+<rect x="470" y="180" width="20" height="40" fill="#B9BFFA" />
+<rect x="490" y="180" width="10" height="50" fill="#000827" />
+<rect x="320" y="190" width="60" height="20" fill="#FFFFFE" />
+<rect x="380" y="190" width="20" height="20" fill="#DF3E23" />
+<rect x="400" y="190" width="70" height="20" fill="#FFFFFE" />
+<rect x="320" y="210" width="40" height="10" fill="#FFFFFE" />
+<rect x="360" y="210" width="60" height="20" fill="#DF3E23" />
+<rect x="420" y="210" width="50" height="10" fill="#FFFFFE" />
+<rect x="320" y="220" width="10" height="10" fill="#B9BFFA" />
+<rect x="330" y="220" width="30" height="10" fill="#FFFFFE" />
+<rect x="420" y="220" width="40" height="10" fill="#FFFFFE" />
+<rect x="460" y="220" width="30" height="10" fill="#B9BFFA" />
+<rect x="320" y="230" width="10" height="30" fill="#000827" />
+<rect x="330" y="230" width="50" height="20" fill="#FFFFFE" />
+<rect x="380" y="230" width="20" height="20" fill="#DF3E23" />
+<rect x="400" y="230" width="60" height="20" fill="#FFFFFE" />
+<rect x="460" y="230" width="20" height="30" fill="#B9BFFA" />
+<rect x="480" y="230" width="10" height="30" fill="#000827" />
+<rect x="330" y="250" width="10" height="10" fill="#B9BFFA" />
+<rect x="340" y="250" width="120" height="10" fill="#FFFFFE" />
+<rect x="330" y="260" width="10" height="10" fill="#000827" />
+<rect x="340" y="260" width="20" height="10" fill="#B9BFFA" />
+<rect x="360" y="260" width="80" height="10" fill="#000827" />
+<rect x="440" y="260" width="30" height="10" fill="#B9BFFA" />
+<rect x="470" y="260" width="10" height="10" fill="#000827" />
+<rect x="340" y="270" width="20" height="10" fill="#000827" />
+<rect x="440" y="270" width="30" height="10" fill="#000827" />
+</svg>

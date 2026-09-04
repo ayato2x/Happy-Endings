@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" width="1000" height="2000" viewBox="0 0 1000 2000" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<rect x="310" y="190" width="10" height="10" fill="#4A0F2B" />
+<rect x="340" y="190" width="60" height="10" fill="#7A1E2C" />
+<rect x="400" y="190" width="40" height="10" fill="#4A0F2B" />
+<rect x="310" y="200" width="20" height="10" fill="#4A0F2B" />
+<rect x="330" y="200" width="10" height="10" fill="#7A1E2C" />
+<rect x="340" y="200" width="90" height="10" fill="#A02D27" />
+<rect x="430" y="200" width="10" height="20" fill="#4A0F2B" />
+<rect x="310" y="210" width="10" height="10" fill="#4A0F2B" />
+<rect x="320" y="210" width="110" height="10" fill="#A02D27" />
+<rect x="310" y="220" width="130" height="10" fill="#A02D27" />
+<rect x="310" y="230" width="20" height="10" fill="#A02D27" />
+<rect x="330" y="230" width="10" height="10" fill="#7A1E2C" />
+<rect x="340" y="230" width="50" height="10" fill="#4A0F2B" />
+<rect x="390" y="230" width="30" height="10" fill="#7A1E2C" />
+<rect x="420" y="230" width="30" height="10" fill="#A02D27" />
+<rect x="310" y="240" width="30" height="10" fill="#4A0F2B" />
+<rect x="420" y="240" width="30" height="10" fill="#7A1E2C" />
+</svg>

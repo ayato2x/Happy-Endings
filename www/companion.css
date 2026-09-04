@@ -1,0 +1,296 @@
+:root {
+  --companion-scale: 1;
+  color-scheme: dark;
+  font-family: "Courier New", ui-monospace, monospace;
+  image-rendering: pixelated;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: transparent !important;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body { cursor: grab; }
+body.dragging { cursor: grabbing; }
+
+#companion-shell,
+#companion-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 500px;
+}
+
+#companion-shell {
+  transform: scale(var(--companion-scale));
+  transform-origin: top left;
+  filter: drop-shadow(0 7px 7px rgba(10, 6, 4, 0.42));
+}
+
+/* Linux/Wayland forbids apps from changing global window coordinates, but
+   permits compositor-owned movement that begins with a real pointer drag.
+   Keep that native region to a small grip above her head: Electron drag
+   regions suppress hover events, and the girl's hover tooltip must remain
+   interactive. X11 can still drag her body through the normal IPC path. */
+#companion-drag-handle {
+  display: none;
+  position: absolute;
+  z-index: 7;
+  top: 4px;
+  left: 8px;
+  width: 54px;
+  height: 18px;
+  border: 1px solid rgba(255, 216, 107, 0.5);
+  border-radius: 9px;
+  background: rgba(23, 16, 14, 0.68);
+  color: rgba(255, 216, 107, 0.85);
+  font: 900 10px/15px "Courier New", monospace;
+  letter-spacing: 3px;
+  text-align: center;
+  opacity: 0.45;
+}
+
+body.native-window-drag #companion-drag-handle {
+  display: block;
+  -webkit-app-region: drag;
+}
+
+body.native-window-drag #companion-shell:hover #companion-drag-handle {
+  opacity: 0.9;
+}
+
+#companion-stage canvas {
+  display: block;
+  width: 320px !important;
+  height: 500px !important;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+#companion-loading {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  color: #ffd86b;
+  font: 700 16px/1 monospace;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px #3a2e24;
+  animation: companion-pulse 900ms steps(2, end) infinite;
+}
+
+#companion-loading.ready { display: none; }
+
+#companion-tooltip {
+  position: absolute;
+  z-index: 5;
+  top: 8px;
+  bottom: auto;
+  left: auto;
+  right: 8px;
+  width: 132px;
+  padding: 9px 8px 8px;
+  border: 2px solid #3a2e24;
+  border-radius: 0;
+  background: linear-gradient(180deg, rgba(33, 23, 19, 0.98), rgba(23, 16, 14, 0.98));
+  box-shadow:
+    inset 0 0 0 1px rgba(240, 224, 192, 0.05),
+    4px 5px 0 rgba(10, 6, 4, 0.45);
+  color: #f0e0c0;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity 110ms linear, transform 110ms steps(3, end);
+  pointer-events: none;
+}
+
+#companion-tooltip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: #ffd86b;
+}
+
+#companion-shell:hover #companion-tooltip,
+#companion-tooltip:focus-within {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+body.dragging #companion-tooltip {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.companion-tooltip-head {
+  display: block;
+  padding: 3px 0 7px;
+  border-bottom: 2px solid #3a2e24;
+}
+
+#companion-name {
+  display: block;
+  overflow: hidden;
+  color: #f0e0c0;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#companion-status {
+  display: block;
+  margin-top: 4px;
+  color: #ffd86b;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.companion-metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.companion-metrics > div {
+  min-width: 0;
+  padding: 5px 6px;
+  border: 1px solid #3a2e24;
+  background: #140d0b;
+}
+
+.companion-metrics span,
+#companion-drag-hint {
+  display: block;
+  color: #8a7e6a;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.companion-metrics strong {
+  display: block;
+  overflow: hidden;
+  margin-top: 3px;
+  color: #ffd86b;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.companion-size-control {
+  margin-top: 7px;
+  padding: 5px 6px 6px;
+  border: 1px solid #3a2e24;
+  background: #140d0b;
+}
+
+#companion-size-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #8a7e6a;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.companion-size-adjuster {
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  gap: 4px;
+  align-items: center;
+}
+
+.companion-size-adjuster button {
+  width: 25px;
+  height: 23px;
+  padding: 0;
+  border: 1px solid #5c4a3a;
+  border-radius: 0;
+  background: #1a1210;
+  color: #ffd86b;
+  font: 900 15px/19px "Courier New", monospace;
+  cursor: pointer;
+}
+
+.companion-size-adjuster button:hover,
+.companion-size-adjuster button:focus-visible {
+  outline: none;
+  background: #ffd86b;
+  color: #17100e;
+}
+
+.companion-size-adjuster button:disabled {
+  border-color: #2a201b;
+  background: #100b09;
+  color: #4a3d34;
+  cursor: default;
+}
+
+#companion-size-value {
+  color: #f0e0c0;
+  font-size: 9px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#companion-drag-hint {
+  margin: 7px 0 6px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.companion-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.companion-actions button {
+  min-height: 27px;
+  padding: 5px 9px;
+  border: 1px solid #5c4a3a;
+  border-radius: 0;
+  background: #1a1210;
+  color: #f0e0c0;
+  font: 800 9px/1 "Courier New", monospace;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.companion-actions button:hover,
+.companion-actions button:focus-visible {
+  outline: none;
+  background: #ffd86b;
+  color: #17100e;
+}
+
+#companion-hide {
+  border-color: #3a2e24;
+  color: #8a7e6a;
+}
+
+@keyframes companion-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #companion-tooltip { transition: none; }
+  #companion-loading { animation: none; }
+}

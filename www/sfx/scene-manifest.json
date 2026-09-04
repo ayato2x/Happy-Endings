@@ -1,0 +1,212 @@
+{
+  "source": "SEX SOUNDS [FullPack] / _WAV (96kHz : 24bit)",
+  "sceneProfiles": {
+    "0": "massage",
+    "1": "massage",
+    "2": "handjob",
+    "3": "handjob",
+    "4": "body",
+    "5": "body",
+    "6": "penetration",
+    "7": "climax",
+    "8": "penetration",
+    "9": "penetration",
+    "10": "body",
+    "11": "penetration",
+    "12": "penetration",
+    "13": "penetration",
+    "14": "penetration",
+    "15": "penetration",
+    "16": "penetration",
+    "17": "penetration",
+    "18": "blowjob",
+    "19": "penetration",
+    "20": "penetration",
+    "21": "penetration",
+    "22": "penetration",
+    "23": "blowjob",
+    "24": "penetration",
+    "25": "penetration",
+    "26": "penetration",
+    "27": "penetration",
+    "28": "penetration",
+    "29": "penetration",
+    "30": "penetration",
+    "31": "penetration",
+    "32": "penetration",
+    "33": "cunnilingus",
+    "34": "penetration",
+    "35": "penetration",
+    "36": "penetration",
+    "37": "penetration",
+    "38": "penetration",
+    "39": "body",
+    "40": "cunnilingus",
+    "41": "penetration",
+    "42": "blowjob",
+    "100": "blowjob",
+    "101": "penetration",
+    "102": "penetration",
+    "103": "cunnilingus",
+    "104": "penetration"
+  },
+  "sceneSync": {
+    "6": { "actionFrames": [3] },
+    "7": { "actionFrames": [10, 20] },
+    "9": { "actionFrames": [4] },
+    "41": { "actionFrames": [1], "actionEveryLoops": [2, 2] },
+    "100": { "actionFrames": [4], "actionEveryLoops": [1, 1] },
+    "101": { "actionFrames": [4], "actionEveryLoops": [1, 1] },
+    "102": { "actionFrames": [4], "actionEveryLoops": [1, 1] },
+    "103": { "actionFrames": [4], "actionEveryLoops": [1, 1] },
+    "104": { "actionFrames": [4], "actionEveryLoops": [1, 1] }
+  },
+  "profiles": {
+    "massage": {
+      "actions": [
+        "service/rub-body-01.mp3",
+        "service/rub-body-03.mp3",
+        "service/rub-body-05.mp3"
+      ],
+      "voices": [
+        "service/female-breath-01.mp3",
+        "service/female-breath-02.mp3",
+        "service/female-breath-03.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [2, 3],
+      "actionStartMs": [390, 100, 100],
+      "actionEveryMs": [1500, 2400],
+      "voiceEveryMs": [4000, 7000],
+      "voiceInitialMs": [1800, 3500],
+      "actionVolume": 0.32,
+      "voiceVolume": 0.22,
+      "rate": [0.96, 1.04]
+    },
+    "handjob": {
+      "actions": [
+        "service/handjob-01.mp3",
+        "service/handjob-04.mp3",
+        "service/handjob-07.mp3"
+      ],
+      "voices": [
+        "service/female-moan-01.mp3",
+        "service/female-moan-03.mp3",
+        "service/female-moan-05.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [1, 1],
+      "actionStartMs": [40, 30, 40],
+      "actionEveryMs": [650, 1000],
+      "voiceEveryMs": [2700, 4500],
+      "voiceInitialMs": [1200, 2500],
+      "actionVolume": 0.35,
+      "voiceVolume": 0.27,
+      "rate": [0.94, 1.06]
+    },
+    "body": {
+      "actions": [
+        "service/body-collide-04.mp3",
+        "service/body-collide-09.mp3"
+      ],
+      "voices": [
+        "service/female-moan-01.mp3",
+        "service/female-moan-03.mp3",
+        "service/female-moan-05.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [1, 1],
+      "actionStartMs": [30, 0],
+      "actionEveryMs": [700, 1050],
+      "voiceEveryMs": [2500, 4200],
+      "voiceInitialMs": [1100, 2400],
+      "actionVolume": 0.34,
+      "voiceVolume": 0.27,
+      "rate": [0.94, 1.06]
+    },
+    "penetration": {
+      "actions": [
+        "service/penetration-01.mp3",
+        "service/penetration-04.mp3",
+        "service/penetration-07.mp3"
+      ],
+      "voices": [
+        "service/female-pant-01.mp3",
+        "service/female-pant-03.mp3",
+        "service/female-pant-05.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [1, 1],
+      "actionStartMs": [40, 50, 45],
+      "actionEveryMs": [600, 900],
+      "voiceEveryMs": [2300, 3700],
+      "voiceInitialMs": [900, 2100],
+      "actionVolume": 0.36,
+      "voiceVolume": 0.28,
+      "rate": [0.95, 1.08]
+    },
+    "blowjob": {
+      "actions": [
+        "service/blowjob-01.mp3",
+        "service/blowjob-04.mp3",
+        "service/blowjob-07.mp3"
+      ],
+      "voices": [
+        "service/male-moan-01.mp3",
+        "service/male-moan-03.mp3",
+        "service/male-moan-05.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [1, 1],
+      "actionStartMs": [55, 40, 40],
+      "actionEveryMs": [750, 1150],
+      "voiceEveryMs": [3000, 4800],
+      "voiceInitialMs": [1300, 2600],
+      "actionVolume": 0.34,
+      "voiceVolume": 0.24,
+      "rate": [0.94, 1.06]
+    },
+    "cunnilingus": {
+      "actions": [
+        "service/mouth-suck-01.mp3",
+        "service/mouth-suck-04.mp3",
+        "service/mouth-suck-07.mp3"
+      ],
+      "voices": [
+        "service/female-moan-01.mp3",
+        "service/female-moan-03.mp3",
+        "service/female-moan-05.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [1, 1],
+      "actionStartMs": [0, 20, 70],
+      "actionEveryMs": [850, 1300],
+      "voiceEveryMs": [2500, 4100],
+      "voiceInitialMs": [1100, 2300],
+      "actionVolume": 0.32,
+      "voiceVolume": 0.28,
+      "rate": [0.94, 1.06]
+    },
+    "climax": {
+      "actions": [
+        "service/cum-01.mp3",
+        "service/cum-04.mp3",
+        "service/cum-06.mp3"
+      ],
+      "voices": [
+        "service/male-orgasm-01.mp3",
+        "service/male-orgasm-02.mp3",
+        "service/male-orgasm-03.mp3"
+      ],
+      "actionFramePhase": 0.5,
+      "actionEveryLoops": [2, 3],
+      "actionStartMs": [30, 20, 0],
+      "actionEveryMs": [1600, 2400],
+      "voiceEveryMs": [3200, 5000],
+      "voiceInitialMs": [1000, 2200],
+      "actionVolume": 0.36,
+      "voiceVolume": 0.25,
+      "rate": [0.96, 1.04]
+    }
+  }
+}
