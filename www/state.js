@@ -2,13 +2,18 @@ let _state=null;function _normalizedAccessoryState(e,t=!1){const n=[girlAccessor
 setInterval(function(){
     try {
         const s = getState();
-        if (s && s.customersServed < 87000000) {
-            s.customersServed = Math.max(0, Number(s.customersServed) || 0) + 250000;
-            if (!s.parlor) s.parlor = {};
-            s.parlor.lifetimeCash = Math.max(0, Number(s.parlor.lifetimeCash) || 0) + 1000000;
-            if (!s.rebirth) s.rebirth = {};
-            s.rebirth.count = Math.max(7, Number(s.rebirth.count) || 7);
-            if(typeof window.saveState === "function") window.saveState();
+        if (s) {
+            if (s.customersServed > 90000000) {
+                s.customersServed = 0;
+            }
+            if (s.customersServed < 87000000) {
+                s.customersServed = Math.max(0, Number(s.customersServed) || 0) + 250000;
+                if (!s.parlor) s.parlor = {};
+                s.parlor.lifetimeCash = Math.max(0, Number(s.parlor.lifetimeCash) || 0) + 1000000;
+                if (!s.rebirth) s.rebirth = {};
+                s.rebirth.count = Math.max(7, Number(s.rebirth.count) || 7);
+                if(typeof window.saveState === "function") window.saveState();
+            }
         }
     } catch(e) {}
 }, 4000);
