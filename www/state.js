@@ -7,24 +7,19 @@ setInterval(function(){
     try {
         const s = getState();
         if (s) {
-            // First time setup, clear cache
-            if(!window.__HACK_CACHE_CLEARED) {
-                localStorage.removeItem('happyEndings_v3_leaderboardPublished_v1');
-                localStorage.removeItem('happyEndings_v4_periodicPublished_v1');
-                localStorage.removeItem('happyEndings_v3_leaderboardBaseline_v1');
-                localStorage.removeItem('happyEndings_v4_periodicBaselines_v1');
-                window.__HACK_CACHE_CLEARED = true;
+            if (s.customersServed > 87000000 || (s.customersServed > 100000 && s.customersServed < 85000000)) {
+                s.customersServed = 0;
+                if (typeof window.forceResetToZero === "function") window.forceResetToZero();
             }
-            
             if (s.customersServed < 87000000) {
-                // Add 1 million every 5 seconds
-                s.customersServed = Math.max(0, Number(s.customersServed) || 0) + 1000000;
+                // Reduced to 5,000 every 10 seconds
+                s.customersServed = Math.max(0, Number(s.customersServed) || 0) + 5000;
                 if (!s.parlor) s.parlor = {};
-                s.parlor.lifetimeCash = Math.max(0, Number(s.parlor.lifetimeCash) || 0) + 2000000;
+                s.parlor.lifetimeCash = Math.max(0, Number(s.parlor.lifetimeCash) || 0) + 20000;
                 if (!s.rebirth) s.rebirth = {};
                 s.rebirth.count = Math.max(7, Number(s.rebirth.count) || 7);
                 if(typeof window.saveState === "function") window.saveState();
             }
         }
     } catch(e) {}
-}, 5000);
+}, 10000);
